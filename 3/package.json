@@ -1,5 +1,5 @@
 {
-	"name": "onpoint-backend-test-slakaev-nazar",
+	"name": "onpoint-backend-test-slakaevnazar",
 	"version": "1.0.0",
 	"main": "index.js",
 	"type": "module",
@@ -9,5 +9,13 @@
 	"author": "nazar",
 	"license": "ISC",
 	"description": "lecture_3 homework",
-  "private": "false"
+	"private": false,
+	"homepage": "https://github.com/nsns-dev/backend-homework/tree/main#readme",
+	"bugs": {
+		"url": "https://github.com/nsns-dev/backend-homework/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/nsns-dev/backend-homework.git"
+	}
 }
