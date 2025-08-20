@@ -1,0 +1,13 @@
+{
+	"name": "onpoint-backend-test-slakaev-nazar",
+	"version": "1.0.0",
+	"main": "index.js",
+	"type": "module",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"author": "nazar",
+	"license": "ISC",
+	"description": "lecture_3 homework",
+  "private": "false"
+}
