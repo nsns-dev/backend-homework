@@ -1,0 +1,13 @@
+{
+  "name": "4",
+  "version": "1.0.0",
+  "main": "main.js",
+  "type": "module",
+  "scripts": {},
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "uid": "^2.0.2"
+  }
+}
