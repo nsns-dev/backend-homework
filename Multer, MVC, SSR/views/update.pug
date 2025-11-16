@@ -1,0 +1,32 @@
+extends layout.pug
+
+block content
+  h1 Update Book
+  if bookNotFound
+    p= bookNotFound
+  if failedUpdateProcess
+    p= failedUpdateProcess
+  if sucessfullUpdateProcess
+    p= sucessfullUpdateProcess
+  if foundedBook
+    form(action=`/books/${foundedBook.id}/update`, method='post', enctype='multipart/form-data')
+      div
+        label(for='title') Title
+        input(type='text', id='title', name='title', value=foundedBook.title)
+      div
+        label(for='authors') Authors
+        input(type='text', id='authors', name='authors', value=foundedBook.authors.join(', '))
+      div
+        label(for='description') Description
+        textarea(id='description', name='description')= foundedBook.description
+      div
+        label(for='favourites') Favourites
+        input(type='text', id='favourites', name='favourites', value=foundedBook.favourites)
+      div
+        label(for='cover') Cover
+        input(type='text', id='cover', name='cover', value=foundedBook.cover)
+      div
+        label(for='file_upload') Book File
+        input(type='file', id='file_upload', name='file_upload' value=foundedBook.file_upload)
+      div
+        button(type='submit') Update Book

@@ -1,0 +1,21 @@
+extends layout.pug
+
+block content
+  h1 Books
+  a.btn(href='/books/create') Add Book
+  if books.length
+    ul#books_list
+      each book in books
+        li#book_item
+          div
+            p#id ID - #{book.id}
+          div
+            p#title= book.title
+            p by #{book.authors.join(', ')}
+          div
+            p= book.description
+          div
+            a(href=`/books/${book.id}/edit`) Edit
+            a(href=`/download/${book.file_upload}`, target='_blank', download) Download
+  else
+    p No books found.

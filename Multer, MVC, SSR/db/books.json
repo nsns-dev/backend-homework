@@ -1,0 +1,35 @@
+[
+  {
+    "id": "1",
+    "title": "Мастер и Маргарита",
+    "description": "Культовый роман Михаила Булгакова о любви, добре и зле, действие которого разворачивается в Москве 1930-х годов и в древнем Иерусалиме.",
+    "authors": [
+      "Михаил Булгаков"
+    ],
+    "favourites": "",
+    "cover": "https://example.com/covers/master-and-margarita.jpg",
+    "file_upload": "uploads\\bbb.txt"
+  },
+  {
+    "id": "2",
+    "title": "1984",
+    "description": "Антиутопия Джорджа Оруэлла, описывающая тоталитарное общество под постоянным контролем Большого Брата. 1984",
+    "authors": [
+      "Джордж Оруэлл, Макан, Крипто Вишня"
+    ],
+    "favourites": "",
+    "cover": "https://example.com/covers/1984.jpg",
+    "file_upload": "uploads\\1984-copy.txt"
+  },
+  {
+    "id": "3",
+    "title": "Три мушкетера",
+    "description": "Приключенческий роман Александра Дюма о похождениях гасконца д'Артаньяна и трёх мушкетёров при дворе короля Людовика.",
+    "authors": [
+      "Александр Дюма"
+    ],
+    "favourites": "",
+    "cover": "https://example.com/covers/three-musketeers.jpg",
+    "file_upload": "uploads/three-musketeers.txt"
+  }
+]

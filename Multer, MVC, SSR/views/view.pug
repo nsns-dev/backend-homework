@@ -1,0 +1,25 @@
+extends layout.pug
+
+block content
+  h1 Find a Book
+  form(action='/books/view', method='post')
+    div
+      label(for='title') Title
+      input(type='text', id='title', name='title', required)
+    div
+      button(type='submit') Find Book
+
+  if book
+    h2 Book Found
+    #book_item
+      div
+        p#title= book.title
+        p by #{book.authors.join(', ')}
+      div
+        p= book.description
+      div
+        a(href=`/books/${book.id}/edit`) Edit
+        a(href=`/download/${book.file_upload}`, target='_blank', download) Download
+  else if foundedBookTitle
+    p Book with title "#{foundedBookTitle}" not found.
+    
